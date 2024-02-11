@@ -21,14 +21,22 @@ print(list2)
 list3=[len(c) for c in list]
 print(list3)
 
-# In[]
+# In[frequenza]
 
-a="programmazione dei compilatori"
+def mode(list):
+    dict={}
+    for n in list:
+        if n in dict:
+            dict[n]+=1
+        else:
+            dict[n]=1
+    m=max(dict.values())
+    list_m=[num for num, freq in dict.items() if freq==m]
+    return list_m
 
-d={}
-for c in a:
-    if c not in d.keys():
-        d[c]=1
-    else:
-        d=d.get(c, 0)+1
+list=[1,4,1,4,6,3,7,4]
+
+list_m=mode(list)
+
+print(list_m)
 
