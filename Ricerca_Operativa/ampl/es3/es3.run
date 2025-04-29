@@ -1,0 +1,10 @@
+
+model C:\Users\damic\OneDrive\Desktop\esercizio\esercizio.mod;
+data C:\Users\damic\OneDrive\Desktop\esercizio\esercizio.dat;
+
+display profitto;
+display x;
+display c_res;
+display c_res.slack;
+
+reset;
