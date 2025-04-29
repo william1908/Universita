@@ -1,6 +1,6 @@
 
-model C:\Users\damic\OneDrive\Desktop\esercizio\esercizio.mod;
-data C:\Users\damic\OneDrive\Desktop\esercizio\esercizio.dat;
+model C:\Users\damic\OneDrive\Desktop\Universita\Ricerca_Operativa\ampl\es3\es3.mod;
+data C:\Users\damic\OneDrive\Desktop\Universita\Ricerca_Operativa\ampl\es3\es3.dat;
 
 display profitto;
 display x;
