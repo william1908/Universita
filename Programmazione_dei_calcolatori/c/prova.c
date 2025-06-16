@@ -1,16 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 int main(){
-    char *k="William";
-    int h = 0;
-    
-    while ( *k != '\0' ){
-        h += *k;
-        printf("%d %d\n", h, *k);
-        k++;
+    int a[10];
+    for(int i=0; i<10; i++){
+        *(a+i)=i+1;
     }
-    printf("%d %d\n", h, *k);
+
+    for(int i=0; i<10; i++){
+        printf("%d ", *(a+i));
+    }
     return 0;
 }
