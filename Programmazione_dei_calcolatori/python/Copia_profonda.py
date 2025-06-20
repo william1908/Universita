@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Feb 12 16:16:35 2025
-
-@author: damic
-"""
-
 def deep_copy(a):
     b=[]
     

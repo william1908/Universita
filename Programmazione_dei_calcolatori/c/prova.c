@@ -1,13 +1,11 @@
 #include <stdio.h>
 
-int main(){
-    int a[10];
-    for(int i=0; i<10; i++){
-        *(a+i)=i+1;
-    }
 
-    for(int i=0; i<10; i++){
-        printf("%d ", *(a+i));
-    }
+
+int main(){
+    char a[100]={11};
+    char *p=&(a[50]);
+    printf("%d", p);
     return 0;
 }
+
