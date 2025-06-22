@@ -9,6 +9,7 @@ typedef struct  {
 } elemento;
 
 
+
 struct lista {
     elemento *a;
     int c;  /* capacita'  */
