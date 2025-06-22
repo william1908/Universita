@@ -32,7 +32,7 @@ def f(a, v):
             M.append(a[i])  #O(1)
         i+=1
     return m, M
-    #Complessità temporale T(n)= n+1+1 quindi O(n)
+    #Complessità temporale  O(n)
     #complessità spaziale O(1)
 
 
@@ -42,20 +42,3 @@ m, M = f(a,5)
 
 print(m)
 print(M)
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-    
-    
