@@ -1,0 +1,15 @@
+arco(a,f).
+arco(a,b).
+arco(b,c).
+arco(f,k).
+arco(k,c).
+arco(k,z).
+arco(z,d).
+arco(c,d).
+
+percorso(A, B, [A,B]):-
+    arco(A,B).
+
+percorso(A, B, [A|K]):-
+    arco(A,X),
+    percorso(X, B, K).
