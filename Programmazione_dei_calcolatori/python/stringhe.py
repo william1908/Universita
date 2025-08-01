@@ -18,14 +18,14 @@ print(a[:4])
 print(a[3:10])
 print(a[::3])
 
-#per ottenere una stinga al contrario
+#per ottenere una stinga al contrario 
 print(a[::-1])
 
 # In[Funzioni per le stringhe]
 
 a='Programmazione dei Calcolatori con Laboratorio'
 
-print(len(a))#O(1), restituisce il numero dic arateri prima del carattere di fine string '\o'
+print(len(a))#O(1), restituisce il numero di caratteri della stringa. la lunghezza è un dato salvato, quindi non va calcolato attraverso cicli.
 
 b=a.split()#l'argomento del metodo è il carattere di divisione, è opzionale. Il metodo restituisce una lista
 

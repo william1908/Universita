@@ -1,6 +1,6 @@
 option solver cplex;
-model C:\Users\damic\OneDrive\Desktop\es2\es2.mod;
-data C:\Users\damic\OneDrive\Desktop\es2\es2.dat;
+model C:\Users\damic\OneDrive\Desktop\Universita\Ricerca_Operativa\ampl\es2\es2.mod;
+data C:\Users\damic\OneDrive\Desktop\Universita\Ricerca_Operativa\ampl\es2\es2.dat;
 for{i in 0..10}{
     let alpha:=i;
     solve;

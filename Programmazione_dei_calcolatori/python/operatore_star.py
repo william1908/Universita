@@ -46,7 +46,7 @@ for e in a:
     else:
         d[e]+=1
 
-i=d.items();
+i=d.items()
 print(i)
 print(sorted(d.items()))
 print(*sorted(d.items()))

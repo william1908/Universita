@@ -57,6 +57,6 @@ def ricerca_intervallo(a, k):
 # complessità temporale: O(log_2 n)
     
 a = [-2, 3, 9, 12, 13]
-k = 4
+k = 10
 
 print( ricerca_intervallo(a, k) )

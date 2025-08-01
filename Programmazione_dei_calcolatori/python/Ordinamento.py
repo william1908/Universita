@@ -111,3 +111,75 @@ def merge_sort( a, lx = 0, rx = None ):
 a = [10, 21, 30, 34, 34, 38, 11, 13, 16, 17, 19, 0, 0, 10, 10]
 merge_sort(a)
 print(a)
+
+# In[Quick Sort]
+
+def Distribuzione(a, sx, dx):
+    i=sx+1
+    j=dx
+    finale=sx
+    while i<=j:
+        while i<=j and a[i]<=a[sx]:
+            finale=i
+            i=i+1
+        while i<=j and a[j]>a[sx]:
+            j=j-1
+        if i<=j:
+            a[i], a[j]= a[j], a[i]
+    a[sx], a[finale]= a[finale], a[sx]
+    return finale
+
+def OrdinamentoPerDistribuzione(a, sx=0, dx=None):
+    if dx==None:
+        dx=len(a)-1
+    if sx<dx:
+        pos=Distribuzione(a, sx, dx)
+        OrdinamentoPerDistribuzione(a, sx, pos-1)
+        OrdinamentoPerDistribuzione(a, pos+1, dx)
+
+
+a = [10, 21, 30, 34, 34, 38, 11, 13, 16, 17, 19, 0, 0, 10, 10]
+OrdinamentoPerDistribuzione(a)
+print(a)
+
+# In[Counting Sort]
+
+def CountingSort(a, c=None, n=None):
+    if n==None:
+        n=len(a)
+    if c==None:
+        c=max(a)+1
+    occ=[]
+    for e in range(c):
+        occ.append(0)
+    for i in range(n):
+        occ[a[i]]=occ[a[i]]+1
+    k=0
+    for e in range(c):
+        while occ[e]>0:
+            a[k]=e
+            k=k+1
+            occ[e]=occ[e]-1
+    while k<n:
+        a[k]=c
+        k=k+1
+    
+a=[5,4,3,2,1]
+
+CountingSort(a);
+print(a)
+
+# In[InsertionSort]
+def InsertionSort(a):
+    n=len(a);
+    for i in range(n):
+        p=a[i]
+        j=i
+        while (j>0) and (a[j-1]>p):
+            a[j]=a[j-1]
+            j=j-1
+        a[j]=p
+
+a=[5,4,3,2,1]
+InsertionSort(a)
+print(a)

@@ -1,0 +1,8 @@
+option solver cplex;
+model C:\Users\damic\OneDrive\Desktop\Universita\Ricerca_Operativa\ampl\Esercizio_esame\modello.mod;
+data C:\Users\damic\OneDrive\Desktop\Universita\Ricerca_Operativa\ampl\Esercizio_esame\modello.dat;
+for {i in 0..10}{
+    let alpha :=i;
+    solve;
+    display z, x;
+};

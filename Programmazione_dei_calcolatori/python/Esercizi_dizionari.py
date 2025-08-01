@@ -46,3 +46,70 @@ def Anagramma(a,b):
 a="ottos"
 b="otsto"
 print (Anagramma(a, b))
+
+# In[Gestione registro della classe]
+
+def Insert(a, b):
+    a[b]=[]
+    
+    
+def Elimina(a, b):
+    if b in a:
+        del(a[b])
+        print("Studente eliminato con successo")
+        return a
+    else:
+        print('Studente non trovato')
+
+    
+def Inserisci_voto(a, b, v):
+    if b in a:
+        a[b].append(v)
+        return a
+    else:
+        print('Studente non trovato')
+    
+def Media(a, b):
+    if b in a:
+        if len(a[b])==0:
+            return None
+        return sum(a[b])/len(a[b])
+    else:
+        print('Studente non trovato')
+
+
+def t1(a):
+    return a[0]
+def t2(a):
+    return a[2]
+
+
+
+
+classe={}
+
+Insert(classe, ('William', 'D\'Amico'))
+Insert(classe, ('Simone', 'Colombo'))
+Insert(classe, ('Andrea', 'Riccardi'))
+Insert(classe, ('Valerio', 'Malagesi'))
+print(classe)
+
+
+
+classe=Inserisci_voto(classe, ('William', 'D\'Amico'), 8)
+classe=Inserisci_voto(classe, ('William', 'D\'Amico'), 9)
+print(classe)
+
+media=Media(classe, ('William', 'D\'Amico'))
+print(media)
+
+classe=Elimina(classe, ('Andrea', 'Riccardi'))
+print(classe)
+
+Insert(classe, ('Andrea', 'Riccardi'))
+print(classe)
+
+
+
+
+
